@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="img/day.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex justify-content-center mt-4">
+      <div class="input-group w-auto">
+        <input
+          type="text"
+          style="width: 20vw"
+          id="place_input"
+          class="form-control"
+          placeholder="Enter a place"
+          aria-label="Enter a place"
+        />
+      </div>
+    </div>
+    <i><span id="place_result">None</span></i>
+    <div class="container d-flex flex-row" style="text-align: right">
+      <div
+        class="m-auto d-flex flex-column align-items-center align align-items-center"
+      >
+        <table>
+          <tr>
+            <td>
+              <img
+                class="m-auto"
+                src="img/day.png"
+                id="weather_icon"
+                alt="weather_icon"
+              />
+            </td>
+            <td><span id="temperature_value" class="m-auto">0</span>&deg;C</td>
+          </tr>
+          <tr class="align-items-center">
+            <td>
+              <img class="m-auto" src="img/humidity.png" alt="weather_icon" />
+            </td>
+            <td><span id="humidity_value" class="m-auto">0</span>%</td>
+          </tr>
+          <tr class="align-items-center">
+            <td>
+              <img class="m-auto" src="img/wind.png" alt="weather_icon" />
+            </td>
+            <td><span id="wind_value" class="m-auto">0</span>km/h</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
